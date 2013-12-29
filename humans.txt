@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    George Adams, IV -- @geowa4
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, HTML5 Boilerplate, Modernizr
+    D3, Q, Pajamas
+    Color Scheme Designer (http://colorschemedesigner.com/#3t31TsZJtw0w0)
