@@ -1,0 +1,30 @@
+{
+  "index": {
+    "social_networks": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/geowa4/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/geowa4"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/geowa4"
+      },
+      {
+        "name": "Keybase",
+        "link": "https://keybase.io/geowa4"
+      },
+      {
+        "name": "StackOverflow",
+        "link": "https://stackoverflow.com/users/50214/geowa4"
+      },
+      {
+        "name": "IFTTT",
+        "link": "https://ifttt.com/p/geowa4"
+      }
+    ]
+  }
+}

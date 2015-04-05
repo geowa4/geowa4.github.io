@@ -1,0 +1,105 @@
+@import 'fonts.css'
+
+body
+  font-family Cardo,serif
+  font-size 18px
+  padding 0
+  background rgba(0,0,0,0.1)
+  color #444
+  margin 0
+
+h1
+h2
+  font-family Rochester,cursive
+  text-align center
+
+header
+  h1
+    font-size 250%
+    line-height 1.35em
+    border-bottom #CCC solid 1px
+    padding 0.25em 0
+    margin 0 0 0.25em
+  ul
+    list-style none
+    padding 0
+  li
+    display inline-block
+    width 33%
+    text-align center
+    a
+      display block
+      padding 0.5em
+      font-variant small-caps
+      background-color rgba(0,0,0,0.05)
+      &.selected
+        background-color rgba(0,0,0,0.1)
+      &:hover
+        background-color rgba(0,0,0,0.15)
+
+article
+  text-align justify
+  padding-bottom 1em
+
+a
+  text-decoration none
+  color: rgba(20,20,255,0.8)
+  &:hover
+    text-decoration none
+
+.page-wrapper
+  max-width 400px
+  margin 0 auto 3em
+  padding 0 1em
+  border-radius 0 0 2em 2em
+  box-shadow 0 0 100px 5px rgba(0,0,0,0.5)
+  background #f4f4f7
+  text-align justify
+
+.github
+  ul
+    list-style none
+    padding-left 0
+  .user
+    display block
+    &::after
+      content ' '
+      display inline-block
+      width 100%
+    .user-data
+      display inline-block
+      text-align center
+      a
+        display inline-block
+      &.avatar
+        .profile-pic
+          display block
+          margin 0 auto
+        .login
+          margin 0
+      .stat
+        display inline-block
+      .value
+        display block
+        font-size 1.5em
+  .repos
+    .repo
+      & + .repo
+        border-top 1px solid rgba(0,0,0,0.1)
+        margin-top 1em
+        padding-top 1em
+      .title
+        margin 1em 0 0.5em
+      .description:empty
+        display none
+      .stats
+        &::before, &::after
+          display table
+          content ' '
+          clear both
+        .issues
+          float left
+        .stargazers
+          float right
+        .value::after
+          content ' '

@@ -1,0 +1,24 @@
+{
+  "globals": {
+    "author": "George Adams, IV",
+    "site_description": "George Adams is a skilled Software Engineer and Technologist",
+    "ga_property_id": "UA-46448431-1",
+    "menu": [
+      {
+        "id": "index",
+        "name": "Bio",
+        "link": "/"
+      },
+      {
+        "id": "projects",
+        "name": "Projects",
+        "link": "/projects/"
+      },
+      {
+        "id": "contact",
+        "name": "Contact",
+        "link": "/contact/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+article
+  h2 Contact
+  p.
+    You can readily find me on the sites listed below.
+    I've also been known to hang out in IRC channels.
+    If you're looking for me, the handle "geowa4" is a good place to start.
+  ul
+    each network in public.contact._data.index.social_networks
+      li
+        a(href=network.link) #{network.name}
