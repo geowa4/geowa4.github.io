@@ -6,21 +6,32 @@ html
     title #{author}
     meta(name='description', content='#{site_description}')
     meta(name='viewport', content='minimal-ui, width=device-width, initial-scale=1')
-    link(rel='stylesheet', type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css')
-    link(rel='stylesheet', type='text/css' href='/styles/main.css')
+    link(rel='stylesheet', type='text/css', href='https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css')
+    link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/icon?family=Roboto:300,400,500,700|Material+Icons')
+    link(rel='stylesheet', type='text/css', href='/styles/main.css')
   body
-    .page-wrapper
-      header
-        h1 #{author}
-        nav
-          ul
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      header.mdl-layout__header
+        .mdl-layout__header-row
+          span.mdl-layout-title #{author}
+          .mdl-layout-spacer
+          nav.mdl-navigation.mdl-layout--large-screen-only
             each page in menu
-              li
-                if page.id === current.path[0]
-                  a.selected(href=page.link)= page.name
-                else
-                  a(href=page.link)= page.name
-      != yield
+              if page.id === current.path[0]
+                a.mdl-navigation__link.is_active(href=page.link)= page.name
+              else
+                a.mdl-navigation__link(href=page.link)= page.name
+      .mdl-layout__drawer
+        span.mdl-layout-title #{author}
+        nav.mdl-navigation
+          each page in menu
+            if page.id === current.path[0]
+              a.mdl-navigation__link.is_active(href=page.link)= page.name
+            else
+              a.mdl-navigation__link(href=page.link)= page.name
+      main.mdl-layout__content
+        != yield
+    script(src='https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
     script(src='/scripts/github.js')
     script.
