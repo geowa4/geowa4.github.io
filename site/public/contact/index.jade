@@ -1,13 +1,14 @@
-section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
-  .mdl-card.mdl-cell.mdl-cell--12-col
-    .mdl-card__supporting-text.mdl-grid
-      h4.mdl-cell.mdl-cell--12-col Contact
-      p.mdl-cell.mdl-cell--12-col.
-        In an attempt to create a community of deveopers in Rochester, NY,
-        I've created a team on Slack called "rocdev".
-        If you'd like an invite and are a developer, send me your email address.
-      p.mdl-cell.mdl-cell--12-col.
-        If you're looking for me, I usually go by "geowa4" on various sites.
+section.section--center.mdl-card.mdl-shadow--2dp
+  .mdl-card__title
+    h4.mdl-card__title-text Contact
+  .mdl-card__supporting-text
+    p.
+      In an attempt to create a community of deveopers in Rochester, NY,
+      I've created a team on Slack called "rocdev".
+      If you'd like an invite and are a developer, send me your email address.
+    p.
+      If you're looking for me, I usually go by "geowa4" on various sites.
+    .mdl-grid
       each network in public.contact._data.index.social_networks
         .mdl-cell.mdl-cell--3-col
           a(href=network.link) #{network.name}

@@ -1,21 +1,21 @@
-section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
-  .mdl-card.mdl-cell.mdl-cell--12-col
-    .mdl-card__supporting-text.mdl-grid
-      h4.mdl-cell.mdl-cell--12-col Projects
-      p.mdl-cell.mdl-cell--12-col
-        | As a Software Craftsman, I enjoy keeping my skills sharp.
-        | One vector I use to achieve this is open source software.
-        | Reading source code can be a great learning experience,
-        | and contributing to the open source community is great practice.
-        | Below, you will find a summary of my GitHub.
+section.section--center.mdl-card.mdl-shadow--2dp
+  .mdl-card__title
+    h4.mdl-card__title-text Projects
+  .mdl-card__supporting-text
+    p.
+      As a Software Craftsman, I enjoy keeping my skills sharp.
+      One vector I use to achieve this is open source software.
+      Reading source code can be a great learning experience,
+      and contributing to the open source community is great practice.
+      Below, you will find a summary of my GitHub.
 .github
   section.user.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
     header.avatar.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone
       a.user-link(rel='external')
         img.profile-pic(height='100%', width='100%')
     .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
-      .mdl-card__title-text.mdl-grid
-        h4.mdl-cell.mdl-cell--12-col
+      .mdl-card__title
+        h4.mdl-card__title-text
           a.user-link.login(rel='external')
       .mdl-card__supporting-text.mdl-grid
         a.followers.stat.mdl-cell.mdl-cell--4-col.mdl-grid(rel='external')
@@ -28,28 +28,27 @@ section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
           .value.mdl-cell.mdl-cell.mdl-cell--12-col
           .mdl-cell.mdl-cell.mdl-cell--12-col repos
   .repos
-    section.repo.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
-      .mdl-card.mdl-cell.mdl-cell--12-col.mdl-grid
-        .mdl-card__title-text.mdl-cell--10-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone.mdl-grid
-          h4.title.mdl-cell.mdl-cell--12-col
+    section.repo.section--center.mdl-card.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+      .mdl-cell--10-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+        .mdl-card__title
+          h4.title.mdl-card__title-text
             i.material-icons
             | &nbsp;
             a(rel='external')
-        .mdl-card__supporting-text.mdl-cell--10-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone.mdl-grid
-          p.description.mdl-cell.mdl-cell--12-col
-        .stats.mdl-cell.mdl-cell--2-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-grid
-          .issues.repo-data.mdl-cell.mdl-cell--12-col
-            a(rel='external')
-              span.value
-              | &nbsp;
-              | issues
-          .stargazers.repo-data.mdl-cell.mdl-cell--12-col
-            a(rel='external')
-              span.value
-              | &nbsp;
-              | stars
-          .forks.repo-data.mdl-cell.mdl-cell--12-col
-            a(rel='external')
-              span.value
-              | &nbsp;
-              | forks
+        .description.mdl-card__supporting-text
+      .stats.mdl-cell.mdl-cell--2-col-desktop.mdl-cell--2-col-tablet.mdl-cell--hide-phone.mdl-grid
+        .issues.repo-data.mdl-cell.mdl-cell--12-col
+          a(rel='external')
+            span.value
+            | &nbsp;
+            | issues
+        .stargazers.repo-data.mdl-cell.mdl-cell--12-col
+          a(rel='external')
+            span.value
+            | &nbsp;
+            | stars
+        .forks.repo-data.mdl-cell.mdl-cell--12-col
+          a(rel='external')
+            span.value
+            | &nbsp;
+            | forks
