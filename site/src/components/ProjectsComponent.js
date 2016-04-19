@@ -22,21 +22,25 @@ const Repo = ({repo}) => {
           label="Home"
           linkButton={true}
           href={`${repo.html_url}`}
+          className="repo-nav"
         />
         <FlatButton
           label="Issues"
           linkButton={true}
           href={`${repo.html_url}/issues`}
+          className="repo-nav"
         />
         <FlatButton
           label="Stargazers"
           linkButton={true}
           href={`${repo.html_url}/stargazers`}
+          className="repo-nav"
         />
         <FlatButton
           label="Forks"
           linkButton={true}
           href={`${repo.html_url}/network`}
+          className="repo-nav"
         />
       </CardActions>
     </Card>
