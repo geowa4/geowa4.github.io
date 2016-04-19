@@ -2,7 +2,7 @@
 # adapted from https://github.com/X1011/git-directory-deploy
 set -o errexit #abort if any command fails
 
-deploy_directory=site/www
+deploy_directory=site/dist
 deploy_branch=master
 
 #if no user identity is already set in the current git environment, use this:
@@ -28,7 +28,9 @@ while : ; do
 	fi
 done
 
-harp compile site
+pushd site
+npm run dist
+popd
 
 #echo expanded commands as they are executed (for debugging)
 function enable_expanded_output {
