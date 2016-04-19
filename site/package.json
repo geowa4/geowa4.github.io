@@ -6,7 +6,7 @@
   "main": "",
   "scripts": {
     "clean": "rm -rf dist/*",
-    "copy": "cp -r ./src/index.html ./src/projects ./src/contact ./src/sw.js ./src/favicon.ico ./dist",
+    "copy": "cp -r ./src/CNAME ./src/robots.txt ./src/humans.txt ./src/index.html ./src/projects ./src/contact ./src/sw.js ./src/favicon.ico ./dist",
     "dist": "npm run copy & webpack --env=dist",
     "lint": "eslint ./src",
     "posttest": "npm run lint",
