@@ -29,6 +29,7 @@ while : ; do
 done
 
 pushd site
+npm run clean
 npm run dist
 popd
 
