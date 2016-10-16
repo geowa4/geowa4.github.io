@@ -97,10 +97,13 @@ header > div,
 main {
   margin: 0 auto;
   max-width: 40rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 main {
-  padding: 3vw 0;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
 }
 
 main p {
