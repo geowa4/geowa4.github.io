@@ -29,8 +29,8 @@ while : ; do
 done
 
 pushd site
-npm run clean
-npm run dist
+rm -rf public
+npm run prod
 popd
 
 #echo expanded commands as they are executed (for debugging)
