@@ -1,0 +1,9 @@
+<section id="contact">
+  <nav>
+    <ul>
+      <% @item[:links].each do |link| %>
+      <li><%= link_to(link[:name], link[:link], rel: 'external') %></li>
+      <% end %>
+    </ul>
+  </nav>
+</section>

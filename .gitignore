@@ -9,6 +9,7 @@
 *.vi
 *~
 *.sass-cache
+tmp
 
 # OS or Editor folders
 .DS_Store
@@ -19,8 +20,5 @@
 nbproject
 Thumbs.db
 
-# NPM packages folder.
-node_modules/
-
-# Brunch output folder.
-public/
+# Nanoc
+output
