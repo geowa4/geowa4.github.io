@@ -1,46 +1,170 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>George Adams IV - Contact</title>
-  <meta name="description" content="George Adams is a Software Craftsman specializing in DevOps, Architecture, and related technologies.">
-  <meta name="theme-color" content="#e81c4f" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/app.css" />
-  <link rel="prefetch" href="https://five-eight-five-slack.herokuapp.com/" />
-</head>
-<body>
-  <header>
-    <div>
-      <img width="150" height="150" src="https://avatars.githubusercontent.com/u/136390?v=3" alt="George Adams IV"/>
-      <h1>George Adams IV</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Biography</a></li>
-          <li><a rel="external" href="https://blog.geowa4.software/">Blog</a></li>
-          <li><a rel="external" href="https://github.com/geowa4/">Projects</a></li>
-          <li><a class="active" href="/contact/">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section id="contact">
-      <nav>
-        <ul>
-          <li><a rel="external" href="https://github.com/geowa4/">GitHub</a></li>
-          <li><a rel="external" href="https://twitter.com/geowa4">Twitter</a></li>
-          <li><a rel="external" href="https://keybase.io/geowa4">Keybase</a></li>
-          <li><a rel="external" href="https://stackoverflow.com/users/50214/geowa4">StackOverflow</a></li>
-          <li><a rel="external" href="https://www.linkedin.com/in/geowa4">LinkedIn</a></li>
-          <li><a rel="external" href="https://five-eight-five-slack.herokuapp.com/">RocDev</a></li>
-        </ul>
-      </nav>
-    </section>
-  </main>
-  <script src="/vendor.js"></script>
-  <script src="/app.js"></script>
-  <script>require('initialize');</script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>George Adams IV - Contact</title>
+    <meta name="description" content="George Adams is a Software Craftsman specializing in DevOps, Architecture, and related technologies.">
+    <meta name="theme-color" content="#e81c4f">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="prefetch" href="https://five-eight-five-slack.herokuapp.com/">
+    <style>
+      body {
+        margin: 0 auto;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        line-height: 1.5;
+        color: #566b78;
+        overflow-y: scroll;
+      }
+
+      header {
+        background-color: #263d36;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 1.2;
+        padding: 10vw 0;
+        text-align: center;
+      }
+
+      header img {
+        border: 1px solid rgba(232, 28, 79, 0.5);
+        display: inline-block;
+        height: 150px;
+        vertical-align: top;
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      header h1 {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
+
+      nav {
+        text-align: justify;
+      }
+
+      @media (max-width: 600px) {
+        nav {
+          text-align: center;
+        }
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-top: 0.6rem;
+      }
+
+      nav li:after {
+        content: "\00a0";
+      }
+
+      nav a, nav span.active {
+        display: inline-block;
+        text-align: center;
+        width: 11em;
+        border: 1px solid #e81c4f;
+        border-radius: 290486px;
+        font-size: 0.6rem;
+        letter-spacing: 0.2em;
+        padding: 1em 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: none 200ms ease-out;
+        transition-property: background;
+      }
+
+      header nav a, header nav span.active {
+        color: white;
+      }
+
+      main nav a {
+        width: 16em;
+      }
+
+      nav a:hover,
+      nav span.active {
+        background:  #e81c4f;
+        color: white;
+      }
+
+      header > div,
+      main {
+        margin: 0 auto;
+        max-width: 40rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      main {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+      }
+
+      main p {
+        text-align: justify;
+      }
+
+      h1,
+      h2,
+      strong {
+        color: #333;
+      }
+
+      a {
+        color: #e81c4f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img width="150" height="150" src="/headshot-crop.jpg" alt="George Adams IV"/>
+        <h1>George Adams IV</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Biography</a></li>
+            <li><a rel="external" href="https://blog.geowa4.software/">Blog</a></li>
+            <li><a rel="external" href="https://github.com/geowa4/">Projects</a></li>
+            <li><span class="active">Contact</span></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="contact">
+  <nav>
+    <ul>
+      
+      <li><a rel="external" href="https://github.com/geowa4">GitHub</a></li>
+      
+      <li><a rel="external" href="https://twitter.com/geowa4">Twitter</a></li>
+      
+      <li><a rel="external" href="https://keybase.io/geowa4">Keybase</a></li>
+      
+      <li><a rel="external" href="https://stackoverflow.com/users/50214/geowa4">StackOverflow</a></li>
+      
+      <li><a rel="external" href="https://www.linkedin.com/in/geowa4">LinkedIn</a></li>
+      
+      <li><a rel="external" href="https://five-eight-five-slack.herokuapp.com/">RocDev</a></li>
+      
+    </ul>
+  </nav>
+</section>
+    </main>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 ---
 name: George Adams IV
 tools:
-  - NeoVim
-  - Brunch
+  - Nanoc
+  - Visual Studio Code
