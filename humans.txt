@@ -2,4 +2,3 @@
 name: George Adams IV
 tools:
   - Nanoc
-  - Visual Studio Code
