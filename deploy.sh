@@ -30,7 +30,7 @@ done
 
 (
 	cd site
-	bundle exec nanoc
+	bin/nanoc
 )
 
 #echo expanded commands as they are executed (for debugging)
